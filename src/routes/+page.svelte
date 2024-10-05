@@ -14,25 +14,26 @@
     <div class=" flex-col flex items-center space-y-8">
 
         <div class=" w-full item-center flex justify-center">
-            <img class=" rounded-full" src="favicon.png" alt="profileimage">
+            <img class=" rounded-full" src="favicon.png" alt="profileimage" in:scale out:scale>
         </div>
 
-        <h1 class="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl" transition:scale={{
-            delay: 100,
-            duration: 300
-        }}>Abdulkabir Toyyib</h1>
-        <p class="mt-6 text-lg leading-8 text-gray-600 text-center" transition:fade>Results-driven software engineer with expertise in mobile and web app development. Proven track record of delivering innovative solutions and exceeding client expectations. Strong problem-solver and team player.</p>
+        <h1 class="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl" in:scale={{
+            delay: 300
+        }} out:scale>Abdulkabir Toyyib</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-600 text-center" in:fade={{
+            delay: 500
+        }} out:fade>Results-driven software engineer with expertise in mobile and web app development. Proven track record of delivering innovative solutions and exceeding client expectations. Strong problem-solver and team player.</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a target="_blank" href="https://github.com/toykam" out:scale in:scale>
+            <a target="_blank" href="https://github.com/toykam" out:scale in:scale={{delay: 600}}>
                 <Icon icon="bi:github" width="{iconSize}em" height="{iconSize}em" />
             </a>
-            <a target="_blank" href="https://x.com/toykam" out:scale in:scale={{delay: 200}}>
+            <a target="_blank" href="https://x.com/toykam" out:scale in:scale={{delay: 800}}>
                 <Icon icon="logos:twitter" width="{iconSize}em" height="{iconSize}em" />
             </a>
-            <a target="_blank" href="mail:to/kabirtoyyib19@gmail.com" out:scale in:scale={{ delay: 400}}>
+            <a target="_blank" href="mail:to/kabirtoyyib19@gmail.com" out:scale in:scale={{ delay: 1000}}>
                 <Icon icon="logos:google-gmail" width="{iconSize}em" height="{iconSize}em" />
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/abdul-kabir-toyyib-61187a177/" out:scale in:scale={{delay: 600}}>
+            <a target="_blank" href="https://www.linkedin.com/in/abdul-kabir-toyyib-61187a177/" out:scale in:scale={{delay: 1200}}>
                 <Icon icon="skill-icons:linkedin" width="{iconSize}em" height="{iconSize}em" />
             </a>
         </div>
