@@ -1,11 +1,13 @@
 <script lang="ts">
+	import { fade, scale } from "svelte/transition";
+
     type Project = {
         title: string;
         links: {android: string, ios: string},
         image: string;
         description: string;
     }
-    let projects: Project[] = [
+    const projects: Project[] = [
         {
             "title": "Just Own It",
             "links": {
@@ -40,7 +42,7 @@
                 "ios": ""
             },
             "image": "https://play-lh.googleusercontent.com/CuKdroRAiSC-ICpK7xg4xZPn7VPu9oDPRcVbWO2Nw7iYnB7bPt9p_hMm_yn5ZFbya0Pt=w832-h470-rw",
-            "description": "BillPadi Services Limited is a Value Added Services (VAS) and trading organization that offers instant recharge of Airtime, Data Bundle, CableTV, Electricity Bill Payment services to their customers."
+            "description": "BillPadi Services Limited is a Value Added Services (VAS) and trading organization that offers instant transaction to their customers."
         },
         {
             "title": "TeddyEd",
@@ -60,26 +62,23 @@
   <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
     <h2 class="text-2xl font-bold text-gray-900">Projects</h2>
 
-    <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+    <div class="mt-6 gap-y-10 grid lg:grid-cols-3 lg:gap-12 items-center">
 
+        {#each projects as { description, image, title, links }, i (title)}
 
-        {#each projects as { description, image, title, links } (title)}
-
-            <div class="group relative">
+            <div class="group relative" in:fade out:scale>
                 <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                     <img src="{ image }" alt="{ description }" class="h-full w-full object-cover object-center">
                 </div>
                 <h3 class="mt-6 text-sm text-gray-500">
-                    <a href="#" target="_blank">
                     <span class="absolute inset-0"></span>
                         { title }
-                    </a>
                 </h3>
-                <p class="text-base font-semibold text-gray-900">{ description }</p>
+                <p class="text-base font-semibold text-gray-900 text-justify">{ description }</p>
                 <div class="mt-4 grid grid-cols-4 gap-4">
                     <!-- Active: "ring-2 ring-indigo-500" -->
-                    <a href="{ links.android }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
-                      <input type="radio" name="size-choice" value="XXS" class="sr-only">
+                    <a href="{ links.android }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
+                      <input type="radio" name="size-choice" value="Android-{ title }" class="sr-only">
                       <span>Android</span>
                       <!--
                         Active: "border", Not Active: "border-2"
@@ -88,8 +87,8 @@
                       <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
                     </a>
                     {#if links.ios.length > 1}
-                        <a href="{ links.ios }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
-                        <input type="radio" name="size-choice" value="XXS" class="sr-only">
+                        <a href="{ links.ios }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
+                        <input type="radio" name="size-choice" value="iOS-{ title }" class="sr-only">
                         <span>iOS</span>
                         <!--
                             Active: "border", Not Active: "border-2"
