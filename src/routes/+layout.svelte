@@ -3,9 +3,9 @@
 	import '../app.css';
 	let menus = [
 		{'title': 'Home', 'path': '/'},
-		{'title': 'About', 'path': '/about'},
+		// {'title': 'About', 'path': '/about'},
 		{'title': 'Projects', 'path': '/projects'},
-		{'title': 'Contact', '': '/contact'},
+		// {'title': 'Contact', '': '/contact'},
 	]
 </script>
 <div class="bg-white">
