@@ -37,6 +37,45 @@
                 <Icon icon="skill-icons:linkedin" width="{iconSize}em" height="{iconSize}em" />
             </a>
         </div>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a target="_blank" href="/" out:scale in:scale={{delay: 600}}>
+                <Icon icon="skill-icons:flutter-light" width="3em" height="3em" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{delay: 800}}>
+                <Icon icon="skill-icons:nodejs-light" width="3em" height="3em" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{ delay: 1000}}>
+                <Icon icon="skill-icons:php-light" width="3em" height="3em" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1500}}>
+                <Icon icon="skill-icons:javascript" width="3em" height="3em" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1500}}>
+                <Icon icon="skill-icons:typescript" width="3em" height="3em" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1500}}>
+                <Icon icon="skill-icons:svelte" width="3em" height="3em" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1500}}>
+                <Icon icon="skill-icons:aws-light" width="3em" height="3em" />
+            </a>
+        </div>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1200}}>
+                <Icon icon="skill-icons:mysql-light" width="3em" height="3em" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1400}}>
+                <Icon icon="devicon-plain:mongodb-wordmark" width="3em" height="3em"  style="color: #000000" />
+            </a>
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1400}}>
+                <Icon icon="skill-icons:graphql-light" width="3em" height="3em" />
+            </a>
+        </div>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a target="_blank" href="/" out:scale in:scale={{delay: 1500}}>
+                <Icon icon="skill-icons:aws-light" width="3em" height="3em" />
+            </a>
+        </div>
     </div>
 </div>
 
