@@ -39,7 +39,7 @@
             "title": "Bill Padi Services",
             "links": {
                 "android": "https://play.google.com/store/apps/details?id=com.billpadi.android",
-                "ios": ""
+                "ios": "https://apps.apple.com/ng/app/billpadi-pay-bills-with-ease/id6497227460"
             },
             "image": "https://play-lh.googleusercontent.com/CuKdroRAiSC-ICpK7xg4xZPn7VPu9oDPRcVbWO2Nw7iYnB7bPt9p_hMm_yn5ZFbya0Pt=w832-h470-rw",
             "description": "BillPadi Services Limited is a Value Added Services (VAS) and trading organization that offers instant transaction to their customers."
