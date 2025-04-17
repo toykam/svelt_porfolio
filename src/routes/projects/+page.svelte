@@ -9,6 +9,15 @@
     }
     const projects: Project[] = [
         {
+            "title": "Carbin Africa",
+            "links": {
+                "android": "https://play.google.com/store/apps/details?id=com.carbinplatform.app",
+                "ios": "https://apps.apple.com/us/app/carbin/id6502053066"
+            },
+            "image": "https://play-lh.googleusercontent.com/MN9ynkTfUAB_SdGfstvTHZVqsT_vIlaaERV-35iz08cg5uJb_2ccCH7pYzMBWCaJ3g=w480-h960-rw",
+            "description": "Carbin Africa is your ultimate automotive business partner, connecting Car Agents with a wide network of Car Dealers, offering an extensive and real-time selection of vehicles at competitive prices. With Carbin, you can effortlessly search for cars, book inspections, and manage your sales—all from one powerful platform."
+        },
+        {
             "title": "Just Own It",
             "links": {
                 'android': "https://play.google.com/store/apps/details?id=com.TDAfrica.justownitapp",
