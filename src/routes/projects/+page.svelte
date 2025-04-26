@@ -3,7 +3,7 @@
 
     type Project = {
         title: string;
-        links: {android: string, ios: string},
+        links: {android: string, ios: string, web?: string};
         image: string;
         description: string;
     }
@@ -62,6 +62,16 @@
             "image": "https://play-lh.googleusercontent.com/m2OFZGzKeLFEVYE6IZNpRwKAbIJNVM9GTd_kllXQJkP6wDCpEvRriO0M-CRVLF6cgw=w832-h470-rw",
             "description": "TeddyED is a cutting-edge edutech application built to streamline operations in schools."
         },
+        {
+            "title": "Puzzle Hunt",
+            "links": {
+                "android": "",
+                "ios": "",
+                "web": "https://hunt.basedbobr.com"
+            },
+            "image": "https://hunt.basedbobr.com/ogimage.webp",
+            "description": "Puzzle Hunt is an engaging online game that challenges players to solve puzzles and complete tasks."
+        },
     ];
 </script>
 
@@ -86,6 +96,17 @@
                 <p class="text-base font-semibold text-gray-900 text-justify">{ description }</p>
                 <div class="mt-4 grid grid-cols-4 gap-4">
                     <!-- Active: "ring-2 ring-indigo-500" -->
+                     {#if links.web.length > 0}
+                        <a href="{ links.web }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
+                            <input type="radio" name="size-choice" value="Web-{ title }" class="sr-only">
+                            <span>Web</span>
+                            <!--
+                                Active: "border", Not Active: "border-2"
+                                Checked: "border-indigo-500", Not Checked: "border-transparent"
+                            -->
+                            <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                        </a>
+                    {/if}
                     <a href="{ links.android }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
                       <input type="radio" name="size-choice" value="Android-{ title }" class="sr-only">
                       <span>Android</span>
@@ -95,10 +116,22 @@
                       -->
                       <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
                     </a>
-                    {#if links.ios.length > 1}
+                    {#if links.ios.length > 0}
                         <a href="{ links.ios }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
                         <input type="radio" name="size-choice" value="iOS-{ title }" class="sr-only">
                         <span>iOS</span>
+                        <!--
+                            Active: "border", Not Active: "border-2"
+                            Checked: "border-indigo-500", Not Checked: "border-transparent"
+                        -->
+                        <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                        </a>
+                    {/if}
+
+                    {#if (links.web && links.web.length > 0)}
+                        <a href="{ links.web }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
+                        <input type="radio" name="size-choice" value="Web-{ title }" class="sr-only">
+                        <span>Web</span>
                         <!--
                             Active: "border", Not Active: "border-2"
                             Checked: "border-indigo-500", Not Checked: "border-transparent"
@@ -112,5 +145,3 @@
     </div>
   </div>
 </div>
-
-  
