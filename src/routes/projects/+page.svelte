@@ -96,17 +96,6 @@
                 <p class="text-base font-semibold text-gray-900 text-justify">{ description }</p>
                 <div class="mt-4 grid grid-cols-4 gap-4">
                     <!-- Active: "ring-2 ring-indigo-500" -->
-                     {#if links.web.length > 0}
-                        <a href="{ links.web }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
-                            <input type="radio" name="size-choice" value="Web-{ title }" class="sr-only">
-                            <span>Web</span>
-                            <!--
-                                Active: "border", Not Active: "border-2"
-                                Checked: "border-indigo-500", Not Checked: "border-transparent"
-                            -->
-                            <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
-                        </a>
-                    {/if}
                     <a href="{ links.android }" class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-12 py-2 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1">
                       <input type="radio" name="size-choice" value="Android-{ title }" class="sr-only">
                       <span>Android</span>
