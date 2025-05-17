@@ -72,6 +72,26 @@
             "image": "https://hunt.basedbobr.com/ogimage.webp",
             "description": "Puzzle Hunt is an engaging online game that challenges players to solve puzzles and complete tasks."
         },
+        {
+            "title": "Airdrop Kit",
+            "links": {
+                "android": "",
+                "ios": "",
+                "web": "https:://airdrop.basedbobr.com/"
+            },
+            "image": "https://airdrop.basedbobr.com/ogimage.webp",
+            "description": "Airdrop Kit a dapp that allows user airdrop token to top holders of other token or nfts."
+        },
+        {
+            "title": "TokenizeMe",
+            "links": {
+                "android": "",
+                "ios": "",
+                "web": "https://tokenizeme.basedbobr.com/"
+            },
+            "image": "https://tokenizeme.basedbobr.com/logo.png",
+            "description": "TokenizeMe is an agent that allows users tokenize their existing social account."
+        },
     ];
 </script>
 
