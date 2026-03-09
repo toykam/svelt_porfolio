@@ -22,6 +22,19 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Abdulkabir Toyyib | Software Engineer</title>
+	<meta
+		name="description"
+		content="Portfolio of Abdulkabir Toyyib, a Software Engineer crafting modern web and mobile applications."
+	/>
+	<meta property="og:title" content="Abdulkabir Toyyib | Software Engineer" />
+	<meta
+		property="og:description"
+		content="Portfolio of Abdulkabir Toyyib, a Software Engineer crafting modern web and mobile applications."
+	/>
+</svelte:head>
+
 <div class="flex min-h-[80vh] w-full flex-col items-center justify-center py-12">
 	<div class="flex w-full max-w-4xl flex-col items-center space-y-10">
 		<!-- Glowing Profile Image -->

@@ -5,7 +5,8 @@
 
 	let menus = [
 		{ title: 'Home', path: '/' },
-		{ title: 'Projects', path: '/projects' }
+		{ title: 'Projects', path: '/projects' },
+		{ title: 'Blog', path: '/blog' }
 	];
 
 	let showSideBar = false;
@@ -14,6 +15,18 @@
 		showSideBar = !showSideBar;
 	}
 </script>
+
+<svelte:head>
+	<meta name="author" content="Abdulkabir Toyyib" />
+	<meta
+		name="keywords"
+		content="Abdulkabir Toyyib, Software Engineer, Portfolio, Developer, SvelteKit, Web Development, Mobile Development"
+	/>
+	<meta property="og:site_name" content="Abdulkabir Toyyib | Portfolio" />
+	<meta property="og:type" content="website" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@dev_toykam" />
+</svelte:head>
 
 <div
 	class="flex min-h-screen w-full flex-col items-center bg-[#09090b] font-sans text-zinc-100 selection:bg-purple-500/30"

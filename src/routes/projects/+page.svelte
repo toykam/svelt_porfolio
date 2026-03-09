@@ -207,6 +207,19 @@
 	let hoveredProject: string | null = null;
 </script>
 
+<svelte:head>
+	<title>Projects | Abdulkabir Toyyib</title>
+	<meta
+		name="description"
+		content="Explore a collection of premium web and mobile projects developed by Abdulkabir Toyyib."
+	/>
+	<meta property="og:title" content="Projects | Abdulkabir Toyyib" />
+	<meta
+		property="og:description"
+		content="Explore a collection of premium web and mobile projects developed by Abdulkabir Toyyib."
+	/>
+</svelte:head>
+
 <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
 	<div class="mb-16 text-center" in:fly={{ y: -30, duration: 600 }}>
 		<h2 class="mb-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
