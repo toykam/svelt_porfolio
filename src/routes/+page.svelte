@@ -81,7 +81,7 @@
 			</a>
 			<a
 				target="_blank"
-				href="https://x.com/toykam"
+				href="https://x.com/dev_toykam"
 				class="text-zinc-400 transition-all duration-300 hover:scale-110 hover:text-blue-400"
 			>
 				<Icon icon="logos:twitter" width="{iconSize}em" height="{iconSize}em" />
