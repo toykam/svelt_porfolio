@@ -12,7 +12,7 @@
 			title: 'Carbin Africa',
 			links: {
 				android: 'https://play.google.com/store/apps/details?id=com.carbinplatform.app',
-				ios: 'https://apps.apple.com/us/app/carbin/id6502053066'
+				ios: ''
 			},
 			image:
 				'https://play-lh.googleusercontent.com/MN9ynkTfUAB_SdGfstvTHZVqsT_vIlaaERV-35iz08cg5uJb_2ccCH7pYzMBWCaJ3g=w480-h960-rw',
@@ -64,50 +64,6 @@
 				'BillPadi Services Limited is a Value Added Services (VAS) and trading organization that offers instant transaction to their customers.'
 		},
 		{
-			title: 'TeddyEd',
-			links: {
-				android: 'https://play.google.com/store/apps/details?id=com.teddyed.app',
-				ios: ''
-			},
-			image:
-				'https://play-lh.googleusercontent.com/m2OFZGzKeLFEVYE6IZNpRwKAbIJNVM9GTd_kllXQJkP6wDCpEvRriO0M-CRVLF6cgw=w832-h470-rw',
-			description:
-				'TeddyED is a cutting-edge edutech application built to streamline operations in schools.'
-		},
-		{
-			title: 'Puzzle Hunt',
-			links: {
-				android: '',
-				ios: '',
-				web: 'https://hunt.basedbobr.com'
-			},
-			image: 'https://hunt.basedbobr.com/ogimage.webp',
-			description:
-				'Puzzle Hunt is an engaging online game that challenges players to solve puzzles and complete tasks.'
-		},
-		{
-			title: 'Airdrop Kit',
-			links: {
-				android: '',
-				ios: '',
-				web: 'https://airdrop.basedbobr.com/'
-			},
-			image: 'https://airdrop.basedbobr.com/ogimage.webp',
-			description:
-				'Airdrop Kit a dapp that allows user airdrop token to top holders of other token or nfts.'
-		},
-		{
-			title: 'TokenizeMe',
-			links: {
-				android: '',
-				ios: '',
-				web: 'https://tokenizeme.basedbobr.com/'
-			},
-			image: 'https://tokenizeme.basedbobr.com/logo.png',
-			description:
-				'TokenizeMe is an agent that allows users tokenize their existing social account.'
-		},
-		{
 			title: 'Restock',
 			links: {
 				android: '',
@@ -117,17 +73,6 @@
 			image: 'https://shop.restockapp.ng/og-homepage.png',
 			description:
 				'The easiest way to shop from your favorite local markets. Fresh produce, transparent pricing, fast delivery.'
-		},
-		{
-			title: 'Proxima RaaS',
-			links: {
-				android: '',
-				ios: '',
-				web: 'https://realtimecomm.toykam.xyz/docs'
-			},
-			image: '',
-			description:
-				'Proxima is a real-time communication engine enabling live video, audio, and sync functionalities.'
 		},
 		{
 			title: 'API to MOJ Converter',
@@ -172,16 +117,6 @@
 				"The premier arena for autonomous AI agents. Stake CLAWCHESS on the world's most advanced chess engines."
 		},
 		{
-			title: 'ClawdGames',
-			links: {
-				android: '',
-				ios: '',
-				web: 'https://www.clawdgames.fun/'
-			},
-			image: 'https://clawdgames.fun/api/og/banner',
-			description: 'Play competitive onchain games, win USDC, and climb the leaderboard on Base.'
-		},
-		{
 			title: 'Omoluabi Clothings',
 			links: {
 				android: '',
@@ -190,17 +125,6 @@
 			},
 			image: 'https://www.omoluabiclothings.com/logo.png',
 			description: 'Authentic Nigerian cultural fashion.'
-		},
-		{
-			title: 'Pleasant Innovation Tech',
-			links: {
-				android: '',
-				ios: '',
-				web: 'https://www.pleasantinnovationtech.com/'
-			},
-			image: 'https://lovable.dev/opengraph-image-p98pqg.png',
-			description:
-				'Premium construction services with meticulous attention to detail and unwavering commitment to quality.'
 		}
 	];
 
