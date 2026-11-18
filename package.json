@@ -2,6 +2,9 @@
 	"name": "svelte-practice",
 	"version": "0.0.1",
 	"private": true,
+	"engines": {
+		"node": ">=24.0.0"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -13,8 +16,8 @@
 	},
 	"devDependencies": {
 		"@iconify/svelte": "^4.0.2",
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/adapter-auto": "^7.0.1",
+		"@sveltejs/kit": "^2.70.4",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@tailwindcss/typography": "^0.5.14",
 		"@types/eslint": "^9.6.0",
